@@ -1,6 +1,3 @@
-// BRIDGE PATTERN - Notifications e-commerce
-
-// Implémentation (Plateformes)
 abstract class Platform {
   abstract send(type: string, message: string): void;
 }
