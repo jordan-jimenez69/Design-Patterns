@@ -30,11 +30,8 @@ Leaf lui implemente juste Operation
 Composite vas gerer les enfant de Add ect 
 
 5.3 Cas d’usage
-
 Leaf = fichier et Composite = Dossier
-
-Un dossier peut contenir :
-des fichiers donc des Leafs
+Un dossier peut contenir des fichiers donc des Leafs
 
 5.4 sépare les interfaces
 En gros : IComponent --> Operation 
