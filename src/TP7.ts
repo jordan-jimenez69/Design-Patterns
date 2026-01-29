@@ -59,7 +59,7 @@ class AutoShippingSelector {
     new ExpressDelivery(),
     new EcoShipping(),
     new PremiumCourier()
-  ];
+  ]; 
 
   findCheapest(weight: number, distance: number, orderValue: number): { strategy: ShippingStrategy; cost: number } {
     let cheapest: { strategy: ShippingStrategy | undefined; cost: number } = { strategy: undefined, cost: Infinity };
@@ -67,7 +67,7 @@ class AutoShippingSelector {
       try {
         const cost = strategy.calculate(weight, distance, orderValue);
         if (cost < cheapest.cost) {
-          cheapest = { strategy, cost };
+          cheapest = { strategy, cost }; 
         }
       } catch (e) {
         let msg = '';
